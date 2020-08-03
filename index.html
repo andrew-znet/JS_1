@@ -1,23 +1,51 @@
- <!DOCTYPE html>
- <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
- <head>
+<head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+<style>
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .black {
+        background: black;
+    }
+
+    td {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+</style>
 
 <body>
-    <script src="main.js"></script>
-    <form>
-        <input id="Tc" type="text" value="1"><br>
-        <input type="button" value="температура по Фар" onclick="addition();"><br>
-    </form>
-    <div id="result"></div>
 
-    <form>
-        <p>Объявление 2х переменных</p>
-        <input id="admin" type="text" value="Администратор"><br>
-        <input id="name" type="text" value="Имя"><br>
-        <input type="button" value="копировать из name в admin" onclick="writename();">
-    </form>
-</body></html>
+    <p>Задача 1. Создать функцию, генерирующую шахматную доску. При этом можно использовать любые html-теги по своему желанию. Доска должна быть разлинована соответствующим образом, т.е. чередовать черные и белые ячейки. Строки должны нумероваться числами от 1 до 8, столбцы – латинскими буквами A, B, C, D, E, F, G, H.</p>
+    <table id="qwe">
+
+    </table>
+    <hr>
+    <p>Задача 2.Сделать генерацию корзины динамической: верстка корзины не должна находиться в HTML-структуре. Там должен быть только div, в который будет вставляться корзина, сгенерированная на базе JS:
+a) Пустая корзина должна выводить строку «Корзина пуста»;
+b) Наполненная должна выводить «В корзине: n товаров на сумму m рублей».</p>
+    <div id="basket"></div>
+    <hr>
+    <p>Задача 3*. Сделать так, чтобы товары в каталоге выводились при помощи JS:
+a) Создать массив товаров (сущность Product);
+b) При загрузке страницы на базе данного массива генерировать вывод из него. HTML-код должен содержать только div id=”catalog” без вложенного кода. Весь вид каталога генерируется JS.</p>
+<div id="catalog"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

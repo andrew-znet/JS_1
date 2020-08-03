@@ -17,11 +17,9 @@ function addition() {
     
     document.getElementById('result').innerHTML = JSON.stringify(obj);
     return obj;
-//    document.getElementById('result').innerHTML = [obj.a, obj.b, obj.c];
-//    console.log(addition());
 }
 // 
-// console.log(addition());
+
 
 //----------------- Задача 2 -----------------
    
@@ -51,7 +49,6 @@ function countBasketPrice() {
     }
     return 'Цена в корзине: ' + price + "р.";
 }
-//basket.innerHTML = countBasketPrice();
 console.log(countBasketPrice());
 
 

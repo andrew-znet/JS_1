@@ -1,23 +1,35 @@
- <!DOCTYPE html>
- <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
- <head>
+<head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <script src="main.js"></script>
-    <form>
-        <input id="Tc" type="text" value="1"><br>
-        <input type="button" value="температура по Фар" onclick="addition();"><br>
-    </form>
-    <div id="result"></div>
+    <div id="header">
+        <div id="basket">
+            <div class="min-price">Корзина пуста</div>
+        </div>
+        <div class="basket-list">
+            <div class="count-price">Корзина пуста</div>
+            <button id="turn">Свернуть</button>
+            <div id="list"></div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="catalog"></div>
+    </div>
+    <div id="modal" class="hide">
+        <div id="close"></div>
+        <div class="layer">
+            <img src="" alt="" id="preview" />
+            <div id="prev">&lsaquo;</div>
+            <div id="next">&rsaquo;</div>
+        </div>
+        <div>
+</body>
+<script src="main.js"></script>
 
-    <form>
-        <p>Объявление 2х переменных</p>
-        <input id="admin" type="text" value="Администратор"><br>
-        <input id="name" type="text" value="Имя"><br>
-        <input type="button" value="копировать из name в admin" onclick="writename();">
-    </form>
-</body></html>
+</html>
